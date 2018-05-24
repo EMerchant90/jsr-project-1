@@ -141,6 +141,7 @@ body {
   flex: 0 0 50%;
   height: calc(100% - 70px);
   padding: 10px;
+  color: white;
 }
 
 .chat-input {
@@ -158,11 +159,11 @@ body {
 }
 
 #hal {
-  background-color: silver;
+  background-color: black;
 }
 
-#dave {
-  background-color: pink;
+#ejaz {
+  background-color: #18CAE6;
 }
 
 /* ==========================================================================
