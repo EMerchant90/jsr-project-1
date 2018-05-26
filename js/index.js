@@ -16,8 +16,5 @@ if (chat == "Open the pod bay doors please, HAL") {
 }
 
 // create a function for HAL to open the chat with "Good morning, Dave"
-function goodmorning(newMessage) {
-  $('#hal').append('HAL 9000: Good Morning, Ejaz. <br />');
-}
+
 // invoke the opening message
-goodmorning();
