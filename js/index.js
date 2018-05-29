@@ -34,7 +34,7 @@ function hal9000(message) {
   } else if (message.indexOf('hello') !== -1) {
     halResponse('Hello, Ejaz. How is ' + rand + '?');
   } else if (message.indexOf('how') !== -1) {
-    halResponse('I know things, Mr. Ejaz.');
+    halResponse('I know things, Ejaz.');
   } else if (message.indexOf('on board') !== -1) {
     var onboard = shuffle();
     halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
