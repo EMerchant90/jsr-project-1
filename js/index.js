@@ -29,40 +29,22 @@ function hal9000(message) {
     return classmates[0] + ", " + classmates[1] + " and " + classmates[2];
   }
 
-//   if(message == '') {
-//     halResponse("Anyone there?")
-//   } else if (message.indexOf('hello') !== -1) {
-//     halResponse("Hello, Ejaz. How is " + rand + "?");
-//   } else if (message.indexOf('how') !== -1) {
-//     halResponse("I know things, Mr. Ejaz.");
-//   } else if (message.indexOf('on board') !== -1) {
-//     var onboard = shuffle();
-//     halResponse("I currently detect ' + onboard + ' onboard the ship, Ejaz.");
-//   } else if (message.indexOf('Open the pod bay doors please, HAL') ! == -1) {
-//     halResponse("I'm sorry Ejaz, I can't do that");
-//   } else if (message.indexOf('what') !== -1 || message.indexOf('where') !== -1 || message.indexOf('why') !== -1 || message.indexOf('when') !== -1) {
-//     halResponse("I can not answer that for you, Ejaz.");
-//   } else {
-//     halResponse("I'm sorry Ejaz, I didn't understand you.");
-//   }
-// }
-
-if(message == '') {
-  halResponse('Anyone there?')
-} else if (message.indexOf('hello') !== -1) {
-  halResponse('Hello, Ejaz. How is ' + rand + '?');
-} else if (message.indexOf('how do you know') !== -1) {
-  halResponse('I know most things, Ejaz.');
-} else if (message.indexOf('on board') !== -1) {
-  var onboard = shuffle();
-  halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
-} else if (message.indexOf('open the pod bay doors please, HAL') !== -1) {
-  halResponse("I'm sorry, Ejaz. I'm afraid I can't do that.");
-} else if (message.indexOf('?') !== -1 || message.indexOf('what') !== -1 || message.indexOf('where') !== -1 || message.indexOf('why') !== -1 || message.indexOf('when') !== -1) {
-  halResponse('I can not answer that for you, Ejaz.');
-} else {
-  halResponse('I do not understand what you mean, Ejaz. ');
-}
+  if(message == '') {
+    halResponse('Anyone there?')
+  } else if (message.indexOf('hello') !== -1) {
+    halResponse('Hello, Ejaz. How is ' + rand + '?');
+  } else if (message.indexOf('how') !== -1) {
+    halResponse('I know things, Mr. Ejaz.');
+  } else if (message.indexOf('on board') !== -1) {
+    var onboard = shuffle();
+    halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
+  } else if (message.indexOf('Open the pod bay doors please, HAL') !== -1) {
+    halResponse("I'm sorry Ejaz, I can't do that");
+  } else if (message.indexOf('?') !== -1 || message.indexOf('what') !== -1 || message.indexOf('where') !== -1 || message.indexOf('why') !== -1 || message.indexOf('when') !== -1) {
+    halResponse('I can not answer that for you, Ejaz.');
+  } else {
+    halResponse("I'm sorry Ejaz, I didn't understand you.");
+  }
 }
 
 // create a function for HAL to open the chat with "Good morning, Dave"
