@@ -40,11 +40,34 @@ function hal9000(message) {
     halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
   } else if (message.indexOf('Open the pod bay doors please, HAL') !== -1) {
     halResponse("I'm sorry Ejaz, I can't do that");
-  } else if (message.indexOf('?') !== -1 || message.indexOf('what') !== -1 || message.indexOf('where') !== -1 || message.indexOf('why') !== -1 || message.indexOf('when') !== -1) {
-    halResponse('I can not answer that for you, Ejaz.');
+  } else if (message.indexOf('?') !== -1) {
+    halResponse('I can help you.');
   } else {
     halResponse("I'm sorry Ejaz, I didn't understand you.");
   }
+
+
+// switch (message == '') {
+//   case ('hello'):
+//     halResponse('Hello, Ejaz. How is ' + rand + '?');
+//     break;
+//   case (message.indexOf('how') !== -1):
+//     halResponse('I know things, Ejaz.');
+//     break;
+//   case (message.indexOf('on board') !== -1):
+//     var onboard = shuffle();
+//     halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
+//     break;
+//   case (message.indexOf('open') !== -1):
+//     halResponse("I'm sorry Ejaz, I can't do that");
+//     break;
+//   case (message.indexOf('?') !== -1):
+//     halResponse('I can not answer that for you, Ejaz.');
+//     break;
+//   default:
+//     halResponse("I'm sorry Ejaz, I didn't understand you.");
+//   }
+//   console.log(message);
 }
 
 // create a function for HAL to open the chat with "Good morning, Dave"
