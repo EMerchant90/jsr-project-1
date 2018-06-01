@@ -17,10 +17,6 @@ function hal9000(message) {
   var classmates = ['Alex','Alexis','Andrew','Andreina','Bernardo','Brandon','Colburn','Courtney','David','Diana','Joanna','Josh','Kaitlyn','Katie','Kevin','Myriam','Nikki','Tenny','Timothy'];
   var rand = classmates[Math.floor(Math.random() * classmates.length)];
 
-  function halResponse(halMessage) {
-    $('#hal').append('HAL 9000: ' + halMessage + '<br />');
-  }
-
   function shuffle() {
     for (let i = classmates.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -29,51 +25,33 @@ function hal9000(message) {
     return classmates[0] + ", " + classmates[1] + " and " + classmates[2];
   }
 
-  if(message == '') {
-    halResponse('Anyone there?')
-  } else if (message.indexOf('hello') !== -1) {
-    halResponse('Hello, Ejaz. How is ' + rand + '?');
-  } else if (message.indexOf('how') !== -1) {
-    halResponse('I know things, Ejaz.');
-  } else if (message.indexOf('on board') !== -1) {
-    var onboard = shuffle();
-    halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
-  } else if (message.indexOf('Open the pod bay doors please, HAL') !== -1) {
-    halResponse("I'm sorry Ejaz, I can't do that");
-  } else if (message.indexOf('?') !== -1) {
-    halResponse('I can help you.');
-  } else {
-    halResponse("I'm sorry Ejaz, I didn't understand you.");
+  function halResponse(halMessage) {
+    $('#hal').append('HAL 9000: ' + halMessage + '<br />');
   }
 
-
-// switch (message == '') {
-//   case ('hello'):
-//     halResponse('Hello, Ejaz. How is ' + rand + '?');
-//     break;
-//   case (message.indexOf('how') !== -1):
-//     halResponse('I know things, Ejaz.');
-//     break;
-//   case (message.indexOf('on board') !== -1):
-//     var onboard = shuffle();
-//     halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
-//     break;
-//   case (message.indexOf('open') !== -1):
-//     halResponse("I'm sorry Ejaz, I can't do that");
-//     break;
-//   case (message.indexOf('?') !== -1):
-//     halResponse('I can not answer that for you, Ejaz.');
-//     break;
-//   default:
-//     halResponse("I'm sorry Ejaz, I didn't understand you.");
-//   }
-//   console.log(message);
+switch (message) {
+  case 'hello':
+    halResponse('Hello, Ejaz. How is ' + rand + '?');
+    break;
+  case 'how':
+    halResponse('I know things, Ejaz.');
+    break;
+  case 'on board':
+    var onboard = shuffle();
+    halResponse('I currently detect ' + onboard + ' onboard the ship, Ejaz.');
+    break;
+  case 'open':
+    halResponse("I'm sorry Ejaz, I can't do that");
+    break;
+  default:
+    halResponse("I'm sorry Ejaz, I didn't understand you.");
+  }
 }
 
 // create a function for HAL to open the chat with "Good morning, Dave"
-function goodMorning(message) {
-  $('#hal').append('HAL 9000: Good Morning, Ejaz. <br />');
+function goodDay(message) {
+  $('#hal').append('HAL 9000: Good Day, Ejaz. <br />');
 }
 
 // invoke the opening message
-goodMorning();
+goodDay();
