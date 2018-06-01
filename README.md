@@ -1,32 +1,25 @@
-# Chatbot!
+# General Assembly JSR Project - Chatbot
 
-## Our favorite AI nemesis, HAL9000 vs. Dave Bowman
+## HAL9000
+* This chatbot is the alpha version of the HAL 9000 created using HTML, CSS, and JavaScript.
+* Currently HAL greets just me a Good Day.
+* I can respond back with a few commands at the moment. Those are below
 
-* Construct a chatbot that responds to various inputs from Dave
-* Feel free to use the HTML and CSS scaffolds or construct your own
-* Be creative with your logic and responses!
-* Feel free to also change the characters and anything in the starter code—be creative!
+### Commands
+* 'Hello'
+* 'How'
+* 'On Board'
+* 'Open'
 
-## Grading Rubric (Pass/Partial/Fail)
+### My Approach
+* Starter code provided with CSS, HTML and few lines of JS to jumpstart project.
+* Created a function with list of class members
+* Created a function to have HAL respond back with messages - ala the output.
+* Created a function for greeting message.
+* Created an if / else statement.
+* Worked on changing if / else into a switch statement.
 
-### Required
-
-* Have the AI respond to user input
-* Do at least 3 different things
-* One of the commands must utilize the list of people in the class to send a reply
-* Use at least 1 conditional to change the response
-* Leverage a for loop to iterate over a collection
-* Use a random component
-* Go above and beyond simple `if/else` statements
-
-### Stretch Goals
-
-* Have 2 or more AIs responding based upon user input
-* Use a regular expression to parse and manipulate the response
-* Have a conversation between two AIs (without creating an infinite loop!)
-
-## Deliverables
-
-* A working chatbot hosted somewhere publicly accessible (CodePen, Github Pages, etc.)
-* A new git respository containing your code
-* A `README.md` file with explanations of what your bot does, what commands it responds to, the approach taken, unsolved problems, etc.
+### Unsolved Problems - Beta and MVP Future Updates
+* Leverage a for loop for iteration over a collection/object.
+* Many small edits and updates to current functionality.
+* Using switch statements and indexOf function together.
